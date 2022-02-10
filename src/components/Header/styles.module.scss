@@ -28,6 +28,35 @@
   display: flex;
   align-items: center;
   column-gap: 2.375rem;
+
+  li {
+    display: flex;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -0.25rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background:rgba(255, 255, 255, 0.5);
+
+      transition: width 0.4s;
+    }
+  
+    &:hover {
+      cursor: pointer;
+      
+      &::after {
+        width: 60%;
+      }
+    }
+  }
 }
 
 .navigation-right {
@@ -68,15 +97,17 @@
 
   ul {
     position: absolute;
-    top: 4rem;
+    top: 1.75rem;
     right: 1.5rem;
 
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0 0.75rem;
 
+    height: 0;
     opacity: 0;
+    overflow: hidden;
 
     border-radius: 0.25rem;
     background: rgba(0, 0, 0, 0.75);
@@ -87,10 +118,12 @@
     }
 
     transition: all 0.4s;
+    // transform: scaleY(0);
 
     &.active {
       opacity: 1;
-      transform: translateY(-2.25rem);
+      height: 80px;
+      padding: 0.5rem 0.75rem;
     }
   }
 }
