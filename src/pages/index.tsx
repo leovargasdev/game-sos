@@ -13,7 +13,11 @@ export default function Home({ title }: HomeProps) {
       <Head>
         <title>NextJS Boilerplate</title>
       </Head>
-      <h1>{title}</h1>
+      <section style={{ background: 'blue' }}>
+        <div style={{ background: 'green' }}>
+          <h1>olar</h1>
+        </div>
+      </section>
     </div>
   )
 }
