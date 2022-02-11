@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  background: blue;
+  // background: blue;
   padding: 1.375rem 0;
 
   > img {
@@ -66,9 +66,15 @@
   img {
     width: 30px;
     height: auto;
+    opacity: 0.6;
+    transition: opacity 0.4s;
 
     &:last-child {
       margin-left: 1rem;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

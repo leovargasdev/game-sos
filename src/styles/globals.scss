@@ -23,6 +23,24 @@ html {
   --main-width: 1200px;
 }
 
+body {
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  /* Track */
+  &::-webkit-scrollbar-tracke {
+    background: transparent;
+    border-radius: 0.25rem;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 0.375rem;
+  }
+}
+
  body, button, textarea, input {
   color: var(--primary);
   font: 400 1rem "Open Sans", sans-serif;

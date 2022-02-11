@@ -22,8 +22,8 @@
   flex-direction: column;
   align-items: flex-start;
 
-  max-width: 545px;
   width: 100%;
+  max-width: 545px;
 
   h3 {
     letter-spacing: 2px;
@@ -171,8 +171,8 @@
   width: 400px;
 
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
 
   span {
     display: flex;
@@ -204,6 +204,7 @@
 
     &.active {
       background: var(--primary);
+
       &::after {
         width: 30px;
       }

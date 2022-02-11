@@ -1,5 +1,5 @@
 .container {
-  background: crimson;
+  // background: crimson;
   padding-top: 216px;
 
   display: flex;
@@ -29,6 +29,12 @@
       height: 24px;
       opacity: 0.5;
       background: #1a1917;
+    }
+
+    transition: filter 0.4s;
+
+    &:hover {
+      filter: brightness(0.92);
     }
   }
 }
