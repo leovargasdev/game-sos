@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NextJS Boilerplate</title>
+        <title>SOS | GAME</title>
+        <meta name="title" content="SOS GAME" />
+        <meta name="description" content="SURVIVE AT ALL COSTS" />
       </Head>
       <div className={styles.background}>
         <Header />
