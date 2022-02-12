@@ -5,6 +5,7 @@ import { Banner } from 'components/Banner'
 import { About } from 'components/About'
 import { Features } from 'components/Features'
 import { SystemRequirements } from 'components/SystemRequirements'
+import { Quotes } from 'components/Quotes'
 
 import styles from 'styles/home.module.scss'
 
@@ -24,6 +25,7 @@ export default function Home() {
       <About />
       <Features />
       <SystemRequirements />
+      <Quotes />
     </div>
   )
 }

@@ -1,0 +1,154 @@
+.background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('/background-section-quotes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 440px;
+
+  h1 {
+    margin: 0.5rem 0 2rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+
+    margin-bottom: 2.375rem;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    color: #1A1917;
+    font-weight: 700;
+
+    width: 260px;
+    height: 60px;
+    border-radius: 0.25rem;
+    background: var(--secondary);
+
+    transition: filter 0.4s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.quotes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.875rem;
+
+  // height: 600px;
+  // overflow-y: scroll;
+  // background: blue;
+  // padding-right: 4rem;
+
+  list-style: none;
+}
+
+.quote {
+  width: 450px;
+  height: 180px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: 0;
+
+  transition: all 0.4s;
+
+  header {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 18px;
+      height: auto;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &-user-image {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+    box-shadow: var(--secondary) 6px 3px 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  &-user-info {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1.875rem;
+    margin-right: auto;
+
+    strong {
+      text-transform: uppercase;
+      color: var(--secondary);
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    span {
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+
+    margin: auto 0 0.75rem;
+  }
+
+  time {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    transform: translateX(-5rem);
+  }
+}
