@@ -1,0 +1,112 @@
+.background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  background-image:  radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url('/background-section-features.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 430px;
+
+  h1 {
+    margin: 0.5rem 0 4.375rem;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style: none;
+
+  row-gap: 0.5rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding: 0 0 1.75rem 3rem;
+
+    height: 100%;
+    max-height: 36px;
+    overflow: hidden;
+
+    transition: all 0.6s;
+
+    &::before {
+      content: '';
+      
+      position: absolute;
+      top: 0;
+      left: 6.5px;
+      width: 1px;
+      height: 0;
+      background: var(--primary);
+
+      transition: height 0.6s;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+      background: transparent;
+
+      transition: background 0.6s;
+    }
+
+    &.active {
+      max-height: 300px;
+      transition: all 1.2s;
+
+      &::before {
+        height: 100%;
+        transition: all 1.2s;
+      }
+
+      span {
+        background: var(--primary);
+        transition: all 1.2s;
+      }
+    }
+  
+    strong {
+      user-select: none;
+      font-weight: bold;
+      font-family: var(--font-bebas);
+      color: var(--secondary);
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      letter-spacing: 2px;
+  
+      margin-bottom: 0.25rem
+    }
+  
+    p {
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      text-align: justify;
+    }
+  }
+
+}
