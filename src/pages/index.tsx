@@ -4,6 +4,7 @@ import { Header } from 'components/Header'
 import { Banner } from 'components/Banner'
 import { About } from 'components/About'
 import { Features } from 'components/Features'
+import { SystemRequirements } from 'components/SystemRequirements'
 
 import styles from 'styles/home.module.scss'
 
@@ -22,6 +23,7 @@ export default function Home() {
 
       <About />
       <Features />
+      <SystemRequirements />
     </div>
   )
 }

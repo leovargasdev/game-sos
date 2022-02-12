@@ -1,0 +1,63 @@
+.background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url('/background-section-system-requirements.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9rem;
+
+  h1 {
+    margin: 0.5rem 0 8.5rem;
+  }
+
+}
+
+.requirements {
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 572px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+  div {
+    padding: 1rem 1.25rem 0;
+    width: 100%;
+    height: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(151, 151, 151, 0.65);
+
+    strong {
+      font-family: var(--font-bebas);
+      color: var(--secondary);
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+    }
+
+    &:last-child {
+      grid-column: 1 / 3;
+    }
+  }
+
+}
