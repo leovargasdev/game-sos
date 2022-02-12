@@ -7,6 +7,7 @@ import { Features } from 'components/Features'
 import { SystemRequirements } from 'components/SystemRequirements'
 import { Quotes } from 'components/Quotes'
 import { Newsletter } from 'components/Newsletter'
+import { Footer } from 'components/Footer'
 
 import styles from 'styles/home.module.scss'
 
@@ -28,6 +29,8 @@ export default function Home() {
       <SystemRequirements />
       <Quotes />
       <Newsletter />
+
+      <Footer />
     </div>
   )
 }
