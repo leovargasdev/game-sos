@@ -17,7 +17,7 @@ export const Header = () => {
   }
 
   return (
-    <header className={styles.container}>
+    <header className={styles.container} id="header">
       <img src="logo.png" alt="Logo SOS" />
 
       <nav className={styles.navigation}>

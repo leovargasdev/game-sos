@@ -7,6 +7,8 @@ import { Features } from 'components/Features'
 import { SystemRequirements } from 'components/SystemRequirements'
 import { Quotes } from 'components/Quotes'
 import { Newsletter } from 'components/Newsletter'
+import { FaCaretUp } from 'react-icons/fa'
+
 import { Footer } from 'components/Footer'
 
 import styles from 'styles/home.module.scss'
@@ -14,6 +16,10 @@ import styles from 'styles/home.module.scss'
 export default function Home() {
   return (
     <div className={styles.container}>
+      <a href="#header" className={styles['go-top']}>
+        <FaCaretUp />
+      </a>
+
       <Head>
         <title>SOS | GAME</title>
         <meta name="title" content="SOS GAME" />
