@@ -5,7 +5,10 @@ export const Features = () => {
   const [activeFeature, setActiveFeature] = useState<number>(0)
 
   return (
-    <section className={styles.background}>
+    <section
+      className="background features"
+      style={{ backgroundPosition: 'top' }}
+    >
       <div className={styles.container}>
         <div className={styles.content}>
           <h3>What’s so special?</h3>

@@ -49,7 +49,7 @@ const QUOTES_USERS = [
 ]
 
 export const Quotes = () => (
-  <section className={styles.background}>
+  <section className="background quotes">
     <div className={styles.container}>
       <div className={styles.content}>
         <h3>What people think?</h3>
