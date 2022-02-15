@@ -8,6 +8,7 @@ export const Features = () => {
     <section
       className="background features"
       style={{ backgroundPosition: 'top' }}
+      id="section-features"
     >
       <div className={styles.container}>
         <div className={styles.content}>

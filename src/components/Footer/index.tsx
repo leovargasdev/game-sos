@@ -8,11 +8,21 @@ export const Footer = () => (
     <div className={styles.links}>
       <img src="logo.png" alt="" />
       <ul>
-        <li>MAIN</li>
-        <li>about</li>
-        <li>game features</li>
-        <li>System requirements</li>
-        <li>quotes</li>
+        <li>
+          <a href="">MAIN</a>
+        </li>
+        <li>
+          <a href="#section-about">about</a>
+        </li>
+        <li>
+          <a href="#section-features">game features</a>
+        </li>
+        <li>
+          <a href="#section-system-requirements">System requirements</a>
+        </li>
+        <li>
+          <a href="#section-quotes">quotes</a>
+        </li>
       </ul>
 
       <div className={styles['social-media']}>

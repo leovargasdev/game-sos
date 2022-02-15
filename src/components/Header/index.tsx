@@ -12,11 +12,21 @@ export const Header = () => {
 
       <nav className={styles.navigation}>
         <ul>
-          <li>MAIN</li>
-          <li>about</li>
-          <li>game features</li>
-          <li>System requirements</li>
-          <li>quotes</li>
+          <li>
+            <a href="">MAIN</a>
+          </li>
+          <li>
+            <a href="#section-about">about</a>
+          </li>
+          <li>
+            <a href="#section-features">game features</a>
+          </li>
+          <li>
+            <a href="#section-system-requirements">System requirements</a>
+          </li>
+          <li>
+            <a href="#section-quotes">quotes</a>
+          </li>
         </ul>
       </nav>
 

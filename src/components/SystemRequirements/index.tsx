@@ -30,7 +30,10 @@ const SYSTEM_REQUIREMENTS: SystemRequirementProps[] = [
 ]
 
 export const SystemRequirements = () => (
-  <section className="background system-requirements">
+  <section
+    className="background system-requirements"
+    id="section-system-requirements"
+  >
     <div className={styles.container}>
       <h3>Can My Computer Run this game?</h3>
       <h1>system requirements</h1>

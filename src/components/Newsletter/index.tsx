@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 export const Newsletter = () => (
   <section>
-    <div className={styles.container}>
+    <div className={styles.container} id="section-newsletter">
       <img src="toten.png" alt="" />
 
       <div className={styles.content}>

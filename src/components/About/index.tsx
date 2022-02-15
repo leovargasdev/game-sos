@@ -18,7 +18,7 @@ export const About = () => {
   }
 
   return (
-    <section className="background about">
+    <section className="background about" id="section-about">
       <div className={styles.content}>
         <div className={styles.description}>
           <h3>What is SOS?</h3>
