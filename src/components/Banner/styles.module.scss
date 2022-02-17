@@ -1,5 +1,4 @@
 .container {
-  // background: crimson;
   margin-top: 216px;
 
   display: flex;
@@ -35,6 +34,27 @@
 
     &:hover {
       filter: brightness(0.92);
+    }
+  }
+
+  @media(max-width: 768px) {
+    margin-top: 30vh;
+  }
+
+  @media(max-width: 650px) {
+
+    h3 {
+      margin: 0.5rem 0 0.75rem;
+    }
+
+    button {
+      column-gap: 0.5rem;
+      font-size: 0.875rem;
+      padding: 0.875rem 0.625rem;
+  
+      span {
+        height: 18px;
+      }
     }
   }
 }

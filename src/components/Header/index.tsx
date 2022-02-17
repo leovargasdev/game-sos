@@ -3,9 +3,9 @@ import { FaChevronDown } from 'react-icons/fa'
 
 import styles from './styles.module.scss'
 
-type Language = 'eng' | 'rus' | 'fra' | 'deu' | 'pt-br'
+type Language = 'eng' | 'rus' | 'fra' | 'deu' | 'br'
 
-const LANGUAGES: Language[] = ['eng', 'rus', 'fra', 'deu', 'pt-br']
+const LANGUAGES: Language[] = ['eng', 'rus', 'fra', 'deu', 'br']
 
 export const Header = () => {
   const [activeLanguage, setActiveLanguage] = useState<Language>('eng')
