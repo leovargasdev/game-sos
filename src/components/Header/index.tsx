@@ -11,6 +11,8 @@ export const Header = () => {
   const [activeLanguage, setActiveLanguage] = useState<Language>('eng')
   const [toggleLanguages, setToggleLanguages] = useState<boolean>(false)
 
+  const [activeToggle, setActiveToggle] = useState<boolean>(false)
+
   const handleChangeLanguage = (language: Language) => {
     setActiveLanguage(language)
     setToggleLanguages(false)
@@ -21,7 +23,7 @@ export const Header = () => {
       <img src="logo.png" alt="Logo SOS" />
 
       <nav className={styles.navigation}>
-        <ul>
+        <ul className={activeToggle ? styles.active : ''}>
           <li>
             <a href="">MAIN</a>
           </li>
@@ -70,6 +72,18 @@ export const Header = () => {
         <a href="/">
           <img src="/icons/steam.svg" alt="" />
         </a>
+
+        <button
+          type="button"
+          className={`${styles.toggle} ${
+            activeToggle ? styles['toggle-active'] : ''
+          }`}
+          onClick={() => setActiveToggle(!activeToggle)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
     </header>
   )

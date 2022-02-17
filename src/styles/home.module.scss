@@ -23,7 +23,9 @@
   }
 
   @media(max-width: 1200px) {
-    padding: 0 2rem;
+    header {
+      padding: 1rem 2rem 0;
+    }
   }
 }
 

@@ -30,13 +30,13 @@ export default function Home() {
         <Banner />
       </div>
 
-      <About />
+      {/* <About />
       <Features />
       <SystemRequirements />
       <Quotes />
       <Newsletter />
 
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
