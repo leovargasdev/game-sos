@@ -6,7 +6,7 @@
 
   width: 100%;
 
-  header, footer {
+  > header, footer {
     width: 100%;
     max-width: var(--main-width);
   }
@@ -23,7 +23,8 @@
   }
 
   @media(max-width: 1200px) {
-    header {
+    > header {
+      width: 100%;
       padding: 1rem 2rem 0;
     }
 

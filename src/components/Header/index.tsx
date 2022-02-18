@@ -24,19 +24,19 @@ export const Header = () => {
 
       <nav className={styles.navigation}>
         <ul className={activeToggle ? styles.active : ''}>
-          <li>
+          <li onClick={() => setActiveToggle(false)}>
             <a href="">MAIN</a>
           </li>
-          <li>
+          <li onClick={() => setActiveToggle(false)}>
             <a href="#section-about">about</a>
           </li>
-          <li>
+          <li onClick={() => setActiveToggle(false)}>
             <a href="#section-features">game features</a>
           </li>
-          <li>
+          <li onClick={() => setActiveToggle(false)}>
             <a href="#section-system-requirements">System requirements</a>
           </li>
-          <li>
+          <li onClick={() => setActiveToggle(false)}>
             <a href="#section-quotes">quotes</a>
           </li>
         </ul>

@@ -2,6 +2,12 @@
   height: 100%;
   display: flex;
   align-items: center;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+  }
 }
 
 .content {
@@ -43,6 +49,42 @@
       filter: brightness(0.9);
     }
   }
+
+  @media(max-width: 768px) {
+    max-width: 80%;
+
+    h1 {
+      margin: 0.5rem 0 0;
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 1rem;
+
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      font-size: 0.875rem;
+  
+      width: 180px;
+      height: 36px;
+    }
+  }
+
+  @media(max-width: 650px) {
+    max-width: 100%;
+
+    p {
+      margin-top: 0.25rem;
+      text-align: justify;
+      line-height: 1.25rem;
+    }
+
+    button {
+      margin: 0 auto;
+    }
+  }
 }
 
 .quotes {
@@ -51,12 +93,17 @@
   flex-direction: column;
   row-gap: 1.875rem;
 
-  // height: 600px;
-  // overflow-y: scroll;
-  // background: blue;
-  // padding-right: 4rem;
-
   list-style: none;
+
+  @media(max-width: 768px) {
+    flex: 0;
+    width: 80%;
+  }
+
+  @media(max-width: 650px) {
+    width: 90%;
+    row-gap: 1.25rem;
+  }
 }
 
 .quote {
@@ -139,5 +186,58 @@
     background: rgba(255, 255, 255, 0.12);
 
     transform: translateX(-5rem);
+  }
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    height: 162px;
+  }
+
+  @media(max-width: 650px) {
+    height: 118px;
+    padding: 0.5rem 0.75rem;
+  
+    &-user-image {
+      width: 35px;
+      height: 35px;
+      box-shadow: var(--secondary) 4px 2px 0;
+    }
+  
+    &-user-info {
+      margin-left: 1rem;
+  
+      strong {
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+        margin-bottom: 0.25rem;
+      }
+  
+      span {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+      }
+
+      a svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  
+    p {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+  
+      margin: auto 0 0.5rem;
+    }
+  
+    time {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+
+    &:hover {
+      transform: translateX(-1rem);
+    }
   }
 }

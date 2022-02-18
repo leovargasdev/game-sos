@@ -131,5 +131,9 @@ h3 {
     &.features {
       background-image: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('/backgrounds/features.png');
     }
+
+    &.system-requirements {
+      background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('/backgrounds/system-requirements.png');
+    }
   }
 }

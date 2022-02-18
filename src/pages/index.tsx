@@ -32,9 +32,9 @@ export default function Home() {
 
       <About />
       <Features />
-      {/* <SystemRequirements />
+      <SystemRequirements />
       <Quotes />
-      <Newsletter />
+      {/* <Newsletter />
 
       <Footer /> */}
     </div>

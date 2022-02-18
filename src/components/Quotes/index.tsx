@@ -25,27 +25,6 @@ const QUOTES_USERS = [
     text: '“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”',
     date: 'December 24, 2018'
   }
-  // {
-  //   avatar_url: 'https://avatars.githubusercontent.com/u/90654719?s=80&v=4',
-  //   username: 'Joana Silva',
-  //   tag: 'PC Gamer',
-  //   text: '"One of my gaming highlights of the year."',
-  //   date: 'October 18, 2018'
-  // },
-  // {
-  //   avatar_url: 'https://avatars.githubusercontent.com/u/42657151?s=80&v=4',
-  //   username: 'Adriel Castro',
-  //   tag: 'Nerdreactor',
-  //   text: '“The next big thing in the world of streaming and survival games.”',
-  //   date: 'December 21, 2018'
-  // },
-  // {
-  //   avatar_url: 'https://avatars.githubusercontent.com/u/31291765?s=80&v=4',
-  //   username: 'Rafa Souza',
-  //   tag: 'Uproxx',
-  //   text: '“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”',
-  //   date: 'December 24, 2018'
-  // }
 ]
 
 export const Quotes = () => (
