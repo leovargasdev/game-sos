@@ -84,14 +84,17 @@ h3 {
 @media(max-width: 650px) {
   h1 {
     font-size: 2rem;
+    line-height: 2rem;
   }
   
   h2 {
     font-size: 1.375rem;
+    line-height: 1.375rem;
   }
   
   h3 {
     font-size: 1.125rem;
+    line-height: 1.125rem;
   }
 }
 
@@ -117,10 +120,16 @@ h3 {
   }
 
   &.features {
-    background-image:  radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url('/backgrounds/features.png');
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url('/backgrounds/features.png');
   }
 
   &.about {
     background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), linear-gradient(rgba(15, 15, 15, 0.9),rgba(15, 15, 15, 0.9)), url('/backgrounds/about.png');
+  }
+
+  @media(max-width: 768px) {
+    &.features {
+      background-image: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('/backgrounds/features.png');
+    }
   }
 }

@@ -26,6 +26,16 @@
     header {
       padding: 1rem 2rem 0;
     }
+
+    section {
+      padding: 0 1rem;
+    }
+  }
+
+  @media(max-width: 650px) {
+    section {
+      padding: 1rem;
+    }
   }
 }
 

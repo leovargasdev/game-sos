@@ -30,9 +30,9 @@ export default function Home() {
         <Banner />
       </div>
 
-      {/* <About />
+      <About />
       <Features />
-      <SystemRequirements />
+      {/* <SystemRequirements />
       <Quotes />
       <Newsletter />
 

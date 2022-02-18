@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 5rem;
+
+  @media(max-width: 768px) {
+    padding-right: 0;
+    justify-content: center;
+  }
 }
 
 .content {
@@ -13,6 +18,14 @@
 
   h1 {
     margin: 0.5rem 0 4.375rem;
+    
+    @media(max-width: 768px) {
+      margin: 0.5rem 0 2rem;
+    }
+  }
+
+  @media(max-width: 650px) {
+    max-width: 278px;
   }
 }
 
@@ -88,13 +101,31 @@
       line-height: 2.25rem;
       letter-spacing: 2px;
   
-      margin-bottom: 0.25rem
+      margin-bottom: 0.25rem;
     }
   
     p {
       font-size: 1.125rem;
       line-height: 1.375rem;
       text-align: justify;
+    }
+
+    @media(max-width: 768px) {
+      padding: 0 0 1.75rem 3rem;
+      max-height: 28px;
+
+      strong {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.3px;
+
+        margin-bottom: 0.625rem;
+      }
+    
+      p {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
     }
   }
 
