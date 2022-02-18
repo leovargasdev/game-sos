@@ -21,6 +21,24 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+
+  @media(max-width: 768px) {
+    padding: 0 0 3rem;
+
+    > div {
+      row-gap: 2rem;
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width: 650px) {
+    padding-bottom: 4rem;
+
+    > div {
+      row-gap: 2rem;
+      flex-direction: column;
+    }
+  }
 }
 
 .links {
@@ -71,6 +89,19 @@
       }
     }
   }
+
+  @media(max-width: 650px) {
+    ul {
+      justify-content: space-evenly;
+      gap: 1rem 0.5rem;
+      flex-wrap: wrap;
+      max-width: 320px;
+
+      li {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .social-media {
@@ -79,6 +110,15 @@
   svg {
     width: 21px;
     height: auto;
+  }
+
+  @media(max-width: 650px) {
+    justify-content: space-evenly;
+    width: 100%;
+
+    svg {
+      width: 18px;
+    }
   }
 
   a:nth-child(1):hover svg {
@@ -118,6 +158,12 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    @media(max-width: 650px) {
+      li {
+        font-size: 0.625rem;
+      }
     }
   }
 }

@@ -7,7 +7,7 @@ export const Newsletter = () => (
 
       <div className={styles.content}>
         <h3>Want to stay in touch?</h3>
-        <h1>newsletter SUBSCRIBE </h1>
+        <h1>newsletter SUBSCRIBE</h1>
 
         <p>
           In order to start receiving our news, all you have to do is enter your
