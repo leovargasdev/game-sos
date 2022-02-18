@@ -34,9 +34,9 @@ export default function Home() {
       <Features />
       <SystemRequirements />
       <Quotes />
-      {/* <Newsletter />
+      <Newsletter />
 
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }

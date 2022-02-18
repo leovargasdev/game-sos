@@ -26,10 +26,6 @@
     text-transform: uppercase;
   }
 
-  @media(max-width: 768px) {
-    width: 100%;
-    padding: 1rem 1rem 0;
-  }
 }
 
 .navigation ul {
@@ -200,7 +196,15 @@
 }
 
 .toggle {
-  display: flex;
+  display: none;
+  visibility: hidden;
+
+  @media(max-width: 768px) {
+    display: flex;
+    visibility: visible;
+  }
+
+
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
