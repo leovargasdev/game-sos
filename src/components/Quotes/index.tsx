@@ -1,31 +1,7 @@
-import Link from 'next/link'
+import quotes from 'data/quotes.json'
 import { FaTwitch } from 'react-icons/fa'
 
 import styles from './styles.module.scss'
-
-const QUOTES_USERS = [
-  {
-    avatar_url: 'https://avatars.githubusercontent.com/u/4248081?s=80&v=4',
-    username: 'Evan Lahti',
-    tag: 'PC Gamer',
-    text: '"One of my gaming highlights of the year."',
-    date: 'October 18, 2018'
-  },
-  {
-    avatar_url: 'https://avatars.githubusercontent.com/u/11177716?s=80&v=4',
-    username: 'Jada Griffin',
-    tag: 'Nerdreactor',
-    text: '“The next big thing in the world of streaming and survival games.”',
-    date: 'December 21, 2018'
-  },
-  {
-    avatar_url: 'https://avatars.githubusercontent.com/u/3390598?s=80&v=4',
-    username: 'Aaron Williams',
-    tag: 'Uproxx',
-    text: '“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”',
-    date: 'December 24, 2018'
-  }
-]
 
 export const Quotes = () => (
   <section className="background quotes" id="section-quotes">
@@ -44,7 +20,7 @@ export const Quotes = () => (
       </div>
 
       <ul className={styles.quotes}>
-        {QUOTES_USERS.map(quote => (
+        {quotes.map(quote => (
           <li key={quote.username} className={styles.quote}>
             <header>
               <div className={styles['quote-user-image']}>
@@ -54,11 +30,13 @@ export const Quotes = () => (
                 <strong>{quote.username}</strong>
                 <span>{quote.tag}</span>
               </div>
-              <Link href="/">
-                <a>
-                  <FaTwitch />
-                </a>
-              </Link>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.twitch.tv/leovargasdev"
+              >
+                <FaTwitch />
+              </a>
             </header>
             <p>{quote.text}</p>
             <time>{quote.date}</time>

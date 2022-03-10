@@ -25,6 +25,7 @@ export default function Home() {
         <meta name="title" content="SOS GAME" />
         <meta name="description" content="SURVIVE AT ALL COSTS" />
       </Head>
+
       <div className={'background banner '.concat(styles.background)}>
         <Header />
         <Banner />

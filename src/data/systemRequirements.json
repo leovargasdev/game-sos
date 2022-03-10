@@ -1,0 +1,22 @@
+[
+  {
+    "name": "OS",
+    "description": "Windows 7 64-bit only (No OSX support at this time)"
+  },
+  {
+    "name": "PROCESSOR",
+    "description": "Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ"
+  },
+  {
+    "name": "MEMORY",
+    "description": "8 GB RAM"
+  },
+  {
+    "name": "storage",
+    "description": "8 GB available space"
+  },
+  {
+    "name": "GRAPHICS",
+    "description": "NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)"
+  }
+]

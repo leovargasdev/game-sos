@@ -1,28 +1,45 @@
+import { useState } from 'react'
 import styles from './styles.module.scss'
 
-export const Newsletter = () => (
-  <section>
-    <div className={styles.container} id="section-newsletter">
-      <img src="toten.png" alt="" />
+export const Newsletter = () => {
+  const [email, setEmail] = useState<string>('')
+  const [hasFocusInput, setHasFocusInput] = useState<boolean>(false)
 
-      <div className={styles.content}>
-        <h3>Want to stay in touch?</h3>
-        <h1>newsletter SUBSCRIBE</h1>
+  return (
+    <section>
+      <div className={styles.container} id="section-newsletter">
+        <img src="toten.png" alt="" />
 
-        <p>
-          In order to start receiving our news, all you have to do is enter your
-          email address. Everything else will be taken care of by us. We will
-          send you emails containing information about game. We don&apos;t spam.
-        </p>
+        <div className={styles.content}>
+          <h3>Want to stay in touch?</h3>
+          <h1>newsletter SUBSCRIBE</h1>
 
-        <form className={styles.form}>
-          <div className={styles.field}>
-            <label htmlFor="">Your email address</label>
-            <input type="email" placeholder="Your email" />
-          </div>
-          <button type="submit">Subscribe now</button>
-        </form>
+          <p>
+            In order to start receiving our news, all you have to do is enter
+            your email address. Everything else will be taken care of by us. We
+            will send you emails containing information about game. We
+            don&apos;t spam.
+          </p>
+
+          <form className={styles.form}>
+            <div
+              className={`${styles.field} ${
+                hasFocusInput ? styles['field-active'] : ''
+              }`}
+            >
+              <label htmlFor="">Your email address</label>
+              <input
+                type="email"
+                placeholder="Your email"
+                onChange={e => setEmail(e.target.value)}
+                onFocus={() => setHasFocusInput(true)}
+                onBlur={() => setHasFocusInput(!!email)}
+              />
+            </div>
+            <button type="submit">Subscribe now</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
